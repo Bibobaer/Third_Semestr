@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/gilya/OneDrive/Рабочий стол/3 семак/C++/Firefox_Telegram_Sender/out/build/x64-debug/Firefox_Telegram_Sender/CMakeFiles/Firefox_Telegram_Sender.dir/embed.manifest"

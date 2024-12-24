@@ -1,0 +1,5 @@
+C:/Users/gilya/OneDrive/Рабочий стол/3 семак/C++/Firefox_Telegram_Sender/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/gilya/OneDrive/Рабочий стол/3 семак/C++/Firefox_Telegram_Sender/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/gilya/OneDrive/Рабочий стол/3 семак/C++/Firefox_Telegram_Sender/out/build/x64-debug/Firefox_Telegram_Sender/CMakeFiles/Firefox_Telegram_Sender.dir
+C:/Users/gilya/OneDrive/Рабочий стол/3 семак/C++/Firefox_Telegram_Sender/out/build/x64-debug/Firefox_Telegram_Sender/CMakeFiles/edit_cache.dir
+C:/Users/gilya/OneDrive/Рабочий стол/3 семак/C++/Firefox_Telegram_Sender/out/build/x64-debug/Firefox_Telegram_Sender/CMakeFiles/rebuild_cache.dir

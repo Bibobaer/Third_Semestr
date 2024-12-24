@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\GraphicSort\GraphicSort\main.cpp(13,120): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\GraphicSort\GraphicSort\main.cpp(13,25): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\GraphicSort\GraphicSort\main.cpp(46,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\GraphicSort\GraphicSort\main.cpp(54,38): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  GraphicSort.vcxproj -> C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\GraphicSort\x64\Debug\GraphicSort.exe
+  "pwsh.exe" не является внутренней или внешней
+  командой, исполняемой программой или пакетным файлом.

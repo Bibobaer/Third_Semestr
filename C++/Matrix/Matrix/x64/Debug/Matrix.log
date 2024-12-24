@@ -1,0 +1,8 @@
+﻿  Matrix.cpp
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\Matrix\Matrix\Matrix.cpp(20,59): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\Matrix\Matrix\Matrix.cpp(20,78): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  main.cpp
+  Создание кода...
+  Matrix.vcxproj -> C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\Matrix\x64\Debug\Matrix.exe
+  "pwsh.exe" не является внутренней или внешней
+  командой, исполняемой программой или пакетным файлом.

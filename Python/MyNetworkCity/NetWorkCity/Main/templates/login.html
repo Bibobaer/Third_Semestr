@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+    <h1>Логинова Паролева</h1>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный Дневник</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c1228;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0c1228;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: #3399ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #002365;
+            color: white;
+            min-height: calc(100vh - 60px);
+        }
+        .image-section {
+            flex: 1;
+            background: url('faceoff.jpg') no-repeat center center;
+            background-size: cover;
+            border: 2px solid white;
+            height: 400px;
+            margin-right: 20px;
+        }
+        .image {
+            position: relative;
+            z-index: 1; /* Передвигаем див вперед */
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        .form-section {
+            flex: 1;
+            text-align: left;
+            max-width: 400px;
+        }
+        .form-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        } 
+        .form-section p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .form-section input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3399ff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #267acc;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #0c1228;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Электронный Дневник</div>
+    </header>
+    <div class="content">
+        <div class="image-section">
+            <img class="image" src="https://sun9-73.userapi.com/impg/Vdk8uzLiLPfRNYEdEofSCG_HevocpcoqVUsYvg/AY2UypSqhMs.jpg?size=682x591&quality=96&sign=b584e29ff5daf01fa4356a24b797f3f2&type=album", alt="Font">
+        </div>
+        <div class="form-section">
+            <h2>Введите ваши данные:</h2>
+            <p>Ваши данные обрабатываются самым херовым способом, не рекомендуется вводить ненастоящие логины и пароли от ВК, Гугла, ГосУслуг и Стима!</p>
+            <p><i>"Нормальную систему Мудлом не назовут."</i></p>
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" id="username" name="username" placeholder="Ваше мыло, аппарат или Саша Логинов..." required>
+                <input type="text" id="password" name="password" placeholder="Введите ключ авторизации (Хэшированный)" required>
+                <button type="submit">→</button>
+            </form>
+            {% if error %}
+                <p style="color:red;">{{ error }}</p>
+            {% endif %}
+        </div>
+    </div>
+    <footer>
+        Все права защищены. Copyright © 2024
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!--<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный Дневник</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #162143;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0c1228;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .badge {
+            position: relative;
+            display: inline-block;
+            background-color: #ffdc00;
+            color: black;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 50%;
+            font-size: 24px;
+        }
+        .badge:after {
+            content: "ANNIVERSARY";
+            display: block;
+            font-size: 14px;
+        }
+        .title {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .stats {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .author {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #0c1228;
+            position: fixed;
+            bottom: 0;
+            transform: translateX(+220%);
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 110%;
+            width: 100%;
+            object-fit: cover; /* Заполнение фона */
+            z-index: -1; /* Позиционирование за другими элементами */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Электронный Дневник</div>
+        <a href="{% url 'login' %}" style="color: #3399ff; text-decoration: none;">Вход</a>
+    </header>
+    <div class="content">
+        <div class="badge">0 Years</div>
+        <div class="title">Нас уже {{ users }} студентов!</div>
+        <div class="stats">{{ subjects }} предметов вуза!</div>
+        <div class="stats">Средний балл универа: 4,5/10</div>
+        <div class="stats">(Костя Руина)</div>
+        <div class="author">МК-2, Гилязов Артур, Носов Дмитрий</div>
+    </div>
+    <footer>
+        Все права защищены. Copyright © 2024
+    </footer>
+    <img class="background-image" src="https://sun9-67.userapi.com/impg/Zs_hpJhEAr_Oe-C7m8mHOGODOJNsbB_14JP-0A/0BbcAiOmjus.jpg?size=1280x720&quality=96&sign=8f910d25221959eb9efc75b65621c282&type=album" alt="Челгу">
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный дневник</title>
+    <style>
+        body {
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .top-bar {
+            background-color: #0c1228; /* Тёмно-синий цвет */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            
+        }
+        .login-box {
+            background-color: #004080; /* Темнее для параллелограмма */
+            color: white;
+            width: 100px;
+            height: 40px;
+            transform: skew(-20deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+        }
+        .bottom-bar {
+            background-color: #0c1228; /* Тёмно-синий цвет */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для содержимого */
+            border-radius: 10px;
+            max-width: 600px;
+        }
+        .medal {
+            font-size: 24px;
+            background-color: gold;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .authors {
+            margin: 20px 0;
+        }
+        .stats {
+            font-size: 18px;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover; /* Заполнение фона */
+            z-index: -1; /* Позиционирование за другими элементами */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div>Электронный дневник</div>
+        <a href="{% url 'login' %}" class="login-box">Вход</a>
+    </div>
+
+    <div class="content">
+        <div class="medal">0 year anniversary</div>
+        
+        <div class="authors">
+            <strong>Авторы:</strong> МК-2, Гилязов Артур, Носов Дмитрий
+        </div>
+
+        <div class="stats">
+            <p>Количество учеников: {{ users }}</p>
+            <p>Количество предметов: {{ subjects }}</p>
+            <p>Общее количество уроков: 300</p>
+            <p>(Костя Руина)</p>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        Все права защищены. Copyright © 2024
+    </div>
+    <img class="background-image" src="https://sun9-67.userapi.com/impg/Zs_hpJhEAr_Oe-C7m8mHOGODOJNsbB_14JP-0A/0BbcAiOmjus.jpg?size=1280x720&quality=96&sign=8f910d25221959eb9efc75b65621c282&type=album" alt="Челгу">
+</body>
+</html>
+

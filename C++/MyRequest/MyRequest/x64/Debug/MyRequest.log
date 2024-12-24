@@ -1,0 +1,5 @@
+﻿  MyRequest.cpp
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\MyRequest\MyRequest\MyRequest.cpp(50,73): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\MyRequest\MyRequest\MyRequest.cpp(128,108): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\MyRequest\MyRequest\MyRequest.cpp(128,74): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  MyRequest.vcxproj -> C:\Users\gilya\OneDrive\Рабочий стол\3 семак\C++\MyRequest\x64\Debug\MyRequest.lib
